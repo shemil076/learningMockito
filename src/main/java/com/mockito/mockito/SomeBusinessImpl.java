@@ -3,6 +3,10 @@ package com.mockito.mockito;
 public class SomeBusinessImpl {
     private DataService dataService;
 
+    public SomeBusinessImpl(DataService dataService) {
+        super();
+        this.dataService = dataService;
+    }
 
     int findTheGreatestNumber(){
         int[] data = dataService.retirieveAllData();
